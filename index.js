@@ -4,10 +4,10 @@ const { exit } = require('process');
 require('dotenv').config();
 
 // sepolia
-const FLASHBOTS_ENDPOINT = 'https://relay-sepolia.flashbots.net'//change for mainnet
-const CHAIN_ID = 11155111;
-const recipientAddress = ""; // Address where you want to send ERC20 tokens
-const tokenAddress = ""; // Address of the ERC20 token contract
+const FLASHBOTS_ENDPOINT = 'https://rpc-polygon.flashbots.net'//change for mainnet
+const CHAIN_ID = 137;
+const recipientAddress = "0x8607eb43064b87110624c0bddfb3145dc8ae9323"; // Address where you want to send ERC20 tokens
+const tokenAddress = "0x300211Def2a644b036A9bdd3e58159bb2074d388"; // Address of the ERC20 token contract
 const amount = ethers.parseUnits("1000", 18); //change accordingly
 
 // mainnet
